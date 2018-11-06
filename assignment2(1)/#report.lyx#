@@ -91,6 +91,13 @@ Parameters :
 \end_layout
 
 \begin_layout Itemize
+\begin_inset Formula $V_{P0}$
+\end_inset
+
+ = 0.6*400 = 240 m/s
+\end_layout
+
+\begin_layout Itemize
 \begin_inset Formula $\alpha_{T0}$
 \end_inset
 
@@ -173,7 +180,7 @@ Simulation was done for 4 test cases
 
 \begin_layout Enumerate
 Maneuvering Target with 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 
@@ -181,7 +188,7 @@ Maneuvering Target with
 
 \begin_layout Enumerate
 Maneuvering Target with 
-\begin_inset Formula $\alpha_{p0}=90deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 
@@ -189,7 +196,7 @@ Maneuvering Target with
 
 \begin_layout Enumerate
 Non-Maneuvering Target with 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 
@@ -197,7 +204,7 @@ Non-Maneuvering Target with
 
 \begin_layout Enumerate
 Non-Maneuvering Target with 
-\begin_inset Formula $\alpha_{p0}=100deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 
@@ -212,12 +219,12 @@ Range variation with time
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/maneuvering/capture_45deg_alpha_p/Range.png
+	filename plots/maneuvering/capture_10deg_alpha_p/Range.png
 	lyxscale 45
 	scale 45
 
@@ -225,7 +232,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename plots/maneuvering/no_capture_90deg_alpha_p/Range.png
+	filename plots/maneuvering/no_capture_85deg_alpha_p/Range.png
 	lyxscale 45
 	scale 45
 
@@ -236,11 +243,11 @@ status collapsed
 
 \begin_layout Plain Layout
 Maneuvering Target; 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 (left);
-\begin_inset Formula $\alpha_{p0}=90deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 (right)
@@ -265,12 +272,12 @@ Maneuvering Target;
 placement H
 wide false
 sideways false
-status collapsed
+status open
 
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/non_maneuvering/capture_45deg_alpha_p/Range.png
+	filename plots/non_maneuvering/capture_10deg_alpha_p/Range.png
 	lyxscale 45
 	scale 45
 
@@ -278,7 +285,7 @@ status collapsed
 
 
 \begin_inset Graphics
-	filename plots/non_maneuvering/non_capture_100deg_alpha_p/Range.png
+	filename plots/non_maneuvering/non_capture_85deg_alpha_p/Range.png
 	lyxscale 45
 	scale 45
 
@@ -289,11 +296,11 @@ status collapsed
 
 \begin_layout Plain Layout
 Non-Maneuvering Target; 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 (left);
-\begin_inset Formula $\alpha_{p0}=100deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 (right)
@@ -323,7 +330,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/maneuvering/capture_45deg_alpha_p/Trajectory.png
+	filename plots/maneuvering/capture_10deg_alpha_p/Trajectory.png
 	lyxscale 45
 	scale 45
 
@@ -331,7 +338,7 @@ status open
 
 
 \begin_inset Graphics
-	filename plots/maneuvering/no_capture_90deg_alpha_p/Trajectory.png
+	filename plots/maneuvering/no_capture_85deg_alpha_p/Trajectory.png
 	lyxscale 45
 	scale 45
 
@@ -342,11 +349,11 @@ status open
 
 \begin_layout Plain Layout
 Maneuvering Target; 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 (left);
-\begin_inset Formula $\alpha_{p0}=90deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 (right)
@@ -372,7 +379,7 @@ status open
 \begin_layout Plain Layout
 \align center
 \begin_inset Graphics
-	filename plots/non_maneuvering/capture_45deg_alpha_p/Range.png
+	filename plots/non_maneuvering/capture_10deg_alpha_p/Trajectory.png
 	lyxscale 45
 	scale 45
 
@@ -380,7 +387,7 @@ status open
 
 
 \begin_inset Graphics
-	filename plots/non_maneuvering/non_capture_100deg_alpha_p/Range.png
+	filename plots/non_maneuvering/non_capture_85deg_alpha_p/Trajectory.png
 	lyxscale 45
 	scale 45
 
@@ -391,11 +398,11 @@ status open
 
 \begin_layout Plain Layout
 Non-Maneuvering Target; 
-\begin_inset Formula $\alpha_{p0}=45deg$
+\begin_inset Formula $\alpha_{p0}=10deg$
 \end_inset
 
 (left);
-\begin_inset Formula $\alpha_{p0}=100deg$
+\begin_inset Formula $\alpha_{p0}=85deg$
 \end_inset
 
 (right)
@@ -415,12 +422,208 @@ Non-Maneuvering Target;
 Acceleration Required versus time
 \end_layout
 
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/maneuvering/capture_10deg_alpha_p/Latax.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/maneuvering/no_capture_85deg_alpha_p/Latax.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maneuvering Target; 
+\begin_inset Formula $\alpha_{p0}=10deg$
+\end_inset
+
+(left);
+\begin_inset Formula $\alpha_{p0}=85deg$
+\end_inset
+
+(right)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/non_maneuvering/capture_10deg_alpha_p/Latax.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/non_maneuvering/non_capture_85deg_alpha_p/Latax.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Non-Maneuvering Target; 
+\begin_inset Formula $\alpha_{p0}=10deg$
+\end_inset
+
+(left);
+\begin_inset Formula $\alpha_{p0}=85deg$
+\end_inset
+
+(right)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Section
 \begin_inset Formula $V_{R}$
 \end_inset
 
  vs 
 \begin_inset Formula $V_{\theta}$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/maneuvering/capture_10deg_alpha_p/Vr_vtheta.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/maneuvering/no_capture_85deg_alpha_p/Vr_vtheta.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Maneuvering Target; 
+\begin_inset Formula $\alpha_{p0}=10deg$
+\end_inset
+
+(left);
+\begin_inset Formula $\alpha_{p0}=85deg$
+\end_inset
+
+(right)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+\begin_inset Float figure
+placement H
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+\align center
+\begin_inset Graphics
+	filename plots/non_maneuvering/capture_10deg_alpha_p/Vr_vtheta.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Graphics
+	filename plots/non_maneuvering/non_capture_85deg_alpha_p/Vr_vtheta.png
+	lyxscale 45
+	scale 45
+
+\end_inset
+
+
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+Non-Maneuvering Target; 
+\begin_inset Formula $\alpha_{p0}=10deg$
+\end_inset
+
+(left);
+\begin_inset Formula $\alpha_{p0}=85deg$
+\end_inset
+
+(right)
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \end_inset
 
 
