@@ -1,3 +1,0 @@
-no collision for nu=0.8 RMiss= 473.9681 TMiss= 7.9936
-no collision for nu=1 RMiss= 232.4298 TMiss= 20
-Collision detected for nu= 1.5 at TF=5.2667secs

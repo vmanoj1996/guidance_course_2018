@@ -1,1 +1,0 @@
-/home/manoj/gits/guidance_course_2018/assignment2/q2a/readme.md
