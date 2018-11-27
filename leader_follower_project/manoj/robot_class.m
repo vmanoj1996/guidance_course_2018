@@ -9,6 +9,7 @@ classdef robot_class < handle
     properties
         totalTime = 90;
         deltaT     = 0.010;
+        prev_int_error = 0;
 %         TotalSteps = 3000; % HARDCODED
         trajectory = zeros(9000 , 6); %x,y,theta,sigma
         currentTimeStep = 1;
@@ -49,8 +50,9 @@ classdef robot_class < handle
             sigma = obj.state(4);
             alpha_t = obj.state(6);
             obj.u_omega = K*(1/r)*(obj.lead_vel*sin(alpha_t - sigma) - obj.u_vel*sin(theta-sigma));
-            error = .1-r;Kp=5;
-            obj.u_vel = Kp*r;
+            error = r-.1;Kp=5;Ki=0.5*Kp;
+            obj.u_vel = obj.lead_vel*cos(theta - sigma)/cos(theta-sigma);%Kp*error+Ki*(obj.prev_int_error+obj.deltaT*error)+
+            obj.prev_int_error=obj.prev_int_error+obj.deltaT*error;
         end
         
         function sensor(follower, lead)

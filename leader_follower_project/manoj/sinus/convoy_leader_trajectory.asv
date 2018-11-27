@@ -43,14 +43,14 @@ omega=matlabFunction(diff(alpha_t));
 vel=matlabFunction(sqrt(vxT^2+vyT^2));
 
 
-omega_func = @(k) omega(0.005*k);
-vel_func = @(k) vel(0.005*k);
+omega_func = @(k) omega(0.01*k);
+vel_func = @(k) vel(0.01*k);
 
 % hold on;
 
 % for k1 = 1:900
-%     xd(k1)=double(subs(xT,0.005*k1));
-%     yd(k1)=double(subs(yT,0.005*k1));
+%     xd(k1)=double(subs(xT,0.01*k1));
+%     yd(k1)=double(subs(yT,0.01*k1));
 % end
 %  plot(xd,yd);
 % function lead_init = leader_initial_state()

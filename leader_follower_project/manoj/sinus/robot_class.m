@@ -8,9 +8,10 @@
 classdef robot_class < handle
     properties
         totalTime = 90;
-        deltaT     = 0.010;
+        deltaT     = 0.0050;
 %         TotalSteps = 3000; % HARDCODED
         trajectory = zeros(9000 , 6); %x,y,theta,sigma
+        meas_los = zeros(9000,1);
         currentTimeStep = 1;
         state = [0,0,0,0,1,0]'; %Current Bot State  X, Y, theta, sigma, R, alpha_T
         
@@ -46,15 +47,19 @@ classdef robot_class < handle
             K = 1.05;
             theta = obj.state(3);
             r = obj.state(5);
-            sigma = obj.state(4);
+            sigma = obj.state(4)+0.2*randn(1,1);
+            obj.meas_los(obj.currentTimeStep) = sigma;
             alpha_t = obj.state(6);
             obj.u_omega = K*(1/r)*(obj.lead_vel*sin(alpha_t - sigma) - obj.u_vel*sin(theta-sigma));
+%             error = r-0.1;Kp=5;
+%             obj.u_vel = Kp*error;
             obj.u_vel = obj.lead_vel*cos(theta - sigma)/cos(theta-sigma);
         end
         
         function sensor(follower, lead)
             follower.lead_vel   = lead.u_vel;
             follower.lead_omega = lead.u_omega;
+            
         end
         function integrator(obj)
             [~,y] = ode45(@obj.bot_ode, [0 obj.deltaT], obj.state );
